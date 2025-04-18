@@ -18,14 +18,14 @@ This Spring Boot application handles a multi-parent/student payment model, where
 1. **Clone the repository**
 
    ```
-   git clone https://github.com/your-repo/payment-processing-app.git
+   git clone https://github.com/winnerezy/tredbase-assessment.git
    cd payment-processing-app
 
     Configure application.properties
 
     In src/main/resources/application.properties, configure your DB:
 
-    spring.datasource.url=jdbc:postgresql://localhost:5432/payment_db
+    spring.datasource.url=jdbc:h2:mem:db_name
     spring.datasource.username=your_db_user
     spring.datasource.password=your_password
     spring.jpa.hibernate.ddl-auto=update
@@ -39,7 +39,6 @@ With Maven:
 ```
     ./mvnw spring-boot:run
 ```
-    Or from your IDE, run PaymentProcessingApplication.java.
 
 Test the API
 
